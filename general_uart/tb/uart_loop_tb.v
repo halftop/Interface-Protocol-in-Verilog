@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module uart_loop_tb();
 	parameter	CLK_FREQUENCE	= 50_000_000,		//hz
 				BAUD_RATE		= 921600	,		//9600、19200 、38400 、57600 、115200、230400、460800、921600
@@ -28,27 +29,27 @@ module uart_loop_tb();
 	frame_en = 1'b0;
 	#30 frame_en = 1'b1;
 	#20 frame_en = 1'b0;
-	@(negedge tx_done)
-	frame_en = 1'b1;
+	@(posedge tx_done)
+	#50frame_en = 1'b1;
 	#20 frame_en = 1'b0;
+	@(posedge tx_done) 
+	#20 $finish;
 	end
 
 	initial begin
 		data_frame = 8'b00101011;
 		@(posedge tx_done)
-		data_frame = 8'b00110101;
+		data_frame <= 8'b00110101;
 		
 	end
 
 	always @(posedge rx_done) begin
-		$display("rx_frame=%b\n",rx_frame);
+		$display("rx_frame=%h\n",rx_frame);
 	end
 
 	initial begin
-		@(posedge rx_done) 
-		;
-		@(posedge rx_done) 
-		#20 $finish;
+		$dumpfile("uart_loop_tb.vcd");
+		$dumpvars();
 	end
 
 uart_loop

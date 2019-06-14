@@ -23,7 +23,7 @@ uart_frame_tx
 #(
 	.CLK_FREQUENCE	( CLK_FREQUENCE )	,
 	.BAUD_RATE		( BAUD_RATE 	)	,
-	.PARITY			( "NONE" 		)	,	//"NONE","EVEN","ODD"
+	.PARITY			( PARITY 		)	,	//"NONE","EVEN","ODD"
 	.FRAME_WD		( FRAME_WD 		)	
 )
 uart_frame_tx_inst
@@ -40,7 +40,7 @@ uart_frame_rx
 #(
 	.CLK_FREQUENCE	(CLK_FREQUENCE	),		//hz
 	.BAUD_RATE		(BAUD_RATE		),		//9600、19200 、38400 、57600 、115200、230400、460800、921600
-	.PARITY			("NONE"			),		//"NONE","EVEN","ODD"
+	.PARITY			(PARITY			),		//"NONE","EVEN","ODD"
 	.FRAME_WD		(FRAME_WD		)		//if PARITY="NONE",it can be 5~9;else 5~8
 )
 uart_frame_rx_inst

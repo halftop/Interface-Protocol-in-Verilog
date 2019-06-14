@@ -21,20 +21,23 @@ initial begin
 	frame_en = 1'b0;
 	#30 frame_en = 1'b1;
 	#20 frame_en = 1'b0;
-	@(negedge tx_done)
-	frame_en = 1'b1;
+	@(posedge tx_done)
+	#50frame_en = 1'b1;
 	#20 frame_en = 1'b0;
+	@(posedge tx_done) 
+	#20 $finish;
 end
 
 initial begin
 	data_frame = 8'b00101011;
 	@(posedge tx_done)
-	data_frame = 8'b00110101;
-	@(negedge tx_done)
-	;
-	@(negedge tx_done)
-	#20 $stop;
+	data_frame <= 8'b00110101;
 end
+
+	initial begin
+		$dumpfile("uart_frame_tx_tb.vcd");
+		$dumpvars();
+	end
 
 uart_frame_tx_fsm
 #(

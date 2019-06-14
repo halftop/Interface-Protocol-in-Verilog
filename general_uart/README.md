@@ -8,6 +8,7 @@ This is a basic UART that support optional parity,settable baud and data width,w
 
 ### Source Files
 
+```
 \---general_uart
     |   README.md
     |   
@@ -21,3 +22,4 @@ This is a basic UART that support optional parity,settable baud and data width,w
             uart_frame_tx_tb.v	:	testbench for uart_rx
             uart_loop.v	:	Wrapper for all to test,it’s a source file
             uart_loop_tb.v	:	testbench for uart_loop
+```
