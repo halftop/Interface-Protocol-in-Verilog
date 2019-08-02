@@ -43,4 +43,14 @@ There is a basic SPI(Master and Slave) with settable frequence,data width and SP
                 uart_loop.v	:	Wrapper for all to test,it’s a source file
                 uart_loop_tb.v	:	testbench for uart_loop
                 uart_loop_tb.vcd
+                 
+    └─SCCB
+        │  README.md
+        │  
+        └─rtl
+                OV9650_SXGA_Config.mif
+                OV_CAM.v
+                OV_CAM_Capture.v
+                OV_CAM_Ctrl.v
+                OV_CAM_SCCB.v
 ```

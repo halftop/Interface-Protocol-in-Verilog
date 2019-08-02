@@ -1,0 +1,149 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=125;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+0  :1280;
+1  :1180;
+2  :6b0a;
+3  :6a41;
+4  :3b09;
+5  :13e0;
+6  :0180;
+7  :0280;
+8  :0000;
+9  :1000;
+10 :13e5;
+11 :3943;
+12 :3812;
+13 :3700;
+14 :3591;
+15 :0e20;
+16 :1e04;
+17 :a880;
+18 :1200;
+19 :0400;
+20 :0c00;
+21 :0d00;
+22 :18bd;
+23 :171d;
+24 :32ad;
+25 :0312;
+26 :1a81;
+27 :1901;
+28 :142e;
+29 :1500;
+30 :3fa6;
+31 :4102;
+32 :4208;
+33 :1b00;
+34 :1606;
+35 :33e2;
+36 :34bf;
+37 :9604;
+38 :3a00;
+39 :8e00;
+40 :3c77;
+41 :8b06;
+42 :9488;
+43 :9588;
+44 :40c1;
+45 :293f;
+46 :0f42;
+47 :3d92;
+48 :6940;
+49 :5cb9;
+50 :5d96;
+51 :5e10;
+52 :59c0;
+53 :5aaf;
+54 :5b55;
+55 :43f0;
+56 :4410;
+57 :4568;
+58 :4696;
+59 :4760;
+60 :4880;
+61 :5fe0;
+62 :608c;
+63 :6120;
+64 :a5d9;
+65 :a474;
+66 :8d02;
+67 :13e7;
+68 :4f3a;
+69 :503d;
+70 :5103;
+71 :5212;
+72 :5326;
+73 :5438;
+74 :5540;
+75 :5640;
+76 :5740;
+77 :580d;
+78 :8c23;
+79 :3e02;
+80 :a9b8;
+81 :aa92;
+82 :ab0a;
+83 :8fdf;
+84 :9000;
+85 :9100;
+86 :9f00;
+87 :a000;
+88 :3a01;
+89 :2470;
+90 :2564;
+91 :26c3;
+92 :2a00;
+93 :2b00;
+94 :6c40;
+95 :6d30;
+96 :6e4b;
+97 :6f60;
+98 :7070;
+99 :7170;
+100:7270;
+101:7370;
+102:7460;
+103:7560;
+104:7650;
+105:7748;
+106:783a;
+107:792e;
+108:7a28;
+109:7b22;
+110:7c04;
+111:7d07;
+112:7e10;
+113:7f28;
+114:8036;
+115:8144;
+116:8252;
+117:8360;
+118:846c;
+119:8578;
+120:868c;
+121:879e;
+122:88bb;
+123:89d2;
+124:8ae6;
+END;
